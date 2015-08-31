@@ -1,6 +1,7 @@
 
 body {
 	margin: 0 0 0 0;
+	background-color: #F8F8F8;
 }
 
 .main-display {
@@ -23,6 +24,19 @@ body {
 
 form {
 	/*display: inline;*/
+}
+
+.your-list {
+	color: #303030;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.no-items {
+	color:  red;
+	font-weight: bold;
+	font-style: italic;
+	display: none;
 }
 
 .add-items {
@@ -68,12 +82,14 @@ form {
 	margin-right: 30%;
 	padding-left: 0;
 	padding-right: 0;
+	border: 4px solid #303030;
 }
 
 .list-items li {
 	padding: 10px 6px 10px 6px; 
 	margin: 10px 10px 10px 10px;
 	word-wrap: break-word;
+	line-height: 1.5;
 }
 
 .red-item {

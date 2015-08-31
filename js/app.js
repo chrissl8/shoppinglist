@@ -13,22 +13,35 @@ $(document).ready(function(){
 		$('#list-value').val(''); //Clear out the form input
 		$('#list-value').focus(); //Return focus to the input for better usability
 		}
+
+		var listSize = $('.shopping-list li').length; //Determine the length of the list for 'no items' text
+		 if(listSize < 1)
+		 {
+		 	//If no list items, show message to add them
+			$('.no-items').show();
+		 }
+		 else
+		 {
+		 	//If items exist, hide message
+			$('.no-items').hide();
+		 }
 	})
 
 	$(document).on('click','.remove-item-link', function() {
 		//Functionality to remove list items
 		 $(this).closest('li').remove(); //Choose the closest list item and remove
 		 $('#list-value').focus(); //Return focus to the input for better usability
-		 var listSize = $('.shopping-list li').length;
+		 
+		 var listSize = $('.shopping-list li').length; //Determine the length of the list for 'no items' text
 		 if(listSize < 1)
 		 {
-		 	//$('.click-to-check').hide();
+		 	//If no list items, show message to add them
 			$('.no-items').show();
 		 }
 		 else
 		 {
+		 	//If items exist, hide message
 			$('.no-items').hide();
-			//$('.click-to-check').show();
 		 }
 	})
 
