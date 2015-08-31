@@ -8,7 +8,7 @@ $(document).ready(function(){
 			//Just to catch lack of input, form is required so this is a second level of validation
 		}
 		else { //Perform add logic to follow
-		var listHTML = '<li class="red-item">' +  listValue +  '<br><a class="remove-item-link">X</a></li>'; //Build HTML for new li
+		var listHTML = '<li class="red-item">' +  listValue +  '<br><a class="remove-item-link">Remove Item</a></li>'; //Build HTML for new li
 		$('.shopping-list').prepend(listHTML); //Prepend list element to shopping list
 		$('#list-value').val(''); //Clear out the form input
 		$('#list-value').focus(); //Return focus to the input for better usability
@@ -27,7 +27,7 @@ $(document).ready(function(){
 		 }
 	})
 
-	$(document).on('click','.remove-item-link', function() {
+	$(document).on('click touchstart','.remove-item-link', function() {
 		//Functionality to remove list items
 		 $(this).closest('li').remove(); //Choose the closest list item and remove
 		 $('#list-value').focus(); //Return focus to the input for better usability

@@ -159,7 +159,74 @@ form {
 	font-weight: bold;
 }
 
+/* Responsive CSS Media Query for Mobile Devices: Tested iPhone 6 (non-plus) and below and Samsung Galaxy S6 */
+@media only screen  
+and (max-device-width : 375px) 
+and (orientation : portrait) {
 
+.main-display {
+	background-image: url('../images/cart.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 10rem;
+	border: 2px solid #303030;
+	border-bottom: 0px;
+}
+
+.main-display .paper-towels {
+	margin-top: 0;
+	text-align: right;
+	font-family: "Nobile", "Arial", cursive;
+	font-size: 2em;
+	font-weight: bold;
+	letter-spacing: 6px;
+}
+
+.add-items #list-value {
+	border: 0px solid #303030;
+	padding-left: 10px;
+	width: 50%;
+	height: 30px;
+	font-size: 1em;
+	font-family: 'PT Serif', serif;
+	border-top: 1px solid #303030;
+	border-bottom: 1px solid #303030;
+	border-radius: 3px;
+	margin-top: 8px;
+}
+
+.add-items #button {
+	border: 0px solid #303030;
+	border-radius: 3px;
+    background-color: white;
+    color: #303030;
+    height: 28px;
+    width: 6em;
+    font-size: 14px;
+    font-family: 'PT Serif', serif;
+    padding-bottom: 0;
+}
+
+.your-list {
+	color: #303030;
+	line-height: 1.5;
+	font-size: 12px;
+}
+
+
+.list-items ul {
+	list-style-type: none;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-left: 0;
+	padding-right: 0;
+	border: 4px solid #303030;
+	border-radius: 3px;
+}
+
+
+}
 
 
 
