@@ -225,6 +225,19 @@ and (orientation : portrait) {
 	border-radius: 3px;
 }
 
+.red-item:hover {
+	border: 3px solid #700000;
+	border-radius: 3px;
+	background-color: #700000;
+	color: white;
+}
+
+.green-item:hover {
+	border: 3px solid #33CC66;
+	border-radius: 3px;
+	background-color: #33CC66;
+	color: black;
+}
 
 }
 
