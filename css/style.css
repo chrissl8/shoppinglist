@@ -152,10 +152,12 @@ form {
 	border: 2px solid red;
 	padding-left: 2.5px;
     padding-right: 2.5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 	font-size: 14px;
 	border-radius: 12px;
-	background-color: white;
-	color: red;
+	background-color: red;
+	color: white;
 	font-weight: bold;
 }
 
@@ -164,10 +166,12 @@ form {
 	border: 2px solid red;
 	padding-left: 2.5px;
     padding-right: 2.5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
 	font-size: 14px;
 	border-radius: 12px;
-	background-color: white;
-	color: red;
+	background-color: red;
+	color: white;
 	font-weight: bold;
 	display: none;
 }
