@@ -30,7 +30,7 @@ $(document).ready(function(){
 	$(document).on('click touchstart','.remove-item-link', function() {
 		//Functionality to remove list items
 		 $(this).closest('li').remove(); //Choose the closest list item and remove
-		 $('#list-value').focus(); //Return focus to the input for better usability
+		 //$('#list-value').focus(); //Return focus to the input for better usability
 
 		 var listSize = $('.shopping-list li').length; //Determine the length of the list for 'no items' text
 		 if(listSize < 1)
