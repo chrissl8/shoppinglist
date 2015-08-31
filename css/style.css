@@ -104,7 +104,8 @@ form {
 	color: black;
 }
 
-.list-items .about {
+.list-items .about a{
+	text-transform: none;
 	font-style: italic;
 	color: #303030;
 }
