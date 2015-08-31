@@ -19,16 +19,17 @@ $(document).ready(function(){
 		 {
 		 	//If no list items, show message to add them
 			$('.no-items').show();
+			$('.remove-all-link').hide();
 		 }
 		 else
 		 {
 		 	//If items exist, hide message
 			$('.no-items').hide();
+			$('.remove-all-link').show();
 		 }
 	})
-
+	//Functionality to remove list items
 	$(document).on('click touchstart','.remove-item-link', function() {
-		//Functionality to remove list items
 		 $(this).closest('li').remove(); //Choose the closest list item and remove
 		 //$('#list-value').focus(); //Return focus to the input for better usability
 
@@ -37,14 +38,16 @@ $(document).ready(function(){
 		 {
 		 	//If no list items, show message to add them
 			$('.no-items').show();
+			$('.remove-all-link').hide();
 		 }
 		 else
 		 {
 		 	//If items exist, hide message
 			$('.no-items').hide();
+			$('.remove-all-link').show();
 		 }
 	})
-
+	//Functionality to change colors for unchecked/checked
 	$(document).on('click touchstart','.list-items li',function() {
 		
 		 if($(this).closest('li').is('.red-item'))
@@ -60,6 +63,24 @@ $(document).ready(function(){
     		$(this).toggleClass('red-item green-item');
 		 }
 		
+	})
+
+	$(document).on('click touchstart','.remove-all-link', function() {
+		$('li').remove();
+
+		var listSize = $('.shopping-list li').length; //Determine the length of the list for 'no items' text
+		 if(listSize < 1)
+		 {
+		 	//If no list items, show message to add them
+			$('.no-items').show();
+			$('.remove-all-link').hide();
+		 }
+		 else
+		 {
+		 	//If items exist, hide message
+			$('.no-items').hide();
+			$('.remove-all-link').show();
+		 }
 	})
 });
 
