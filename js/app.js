@@ -45,7 +45,7 @@ $(document).ready(function(){
 		 }
 	})
 
-	$(document).on('click','.list-items li',function() {
+	$(document).on('click touchstart','.list-items li',function() {
 		
 		 if($(this).closest('li').is('.red-item'))
 		 {
