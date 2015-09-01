@@ -1,3 +1,8 @@
+<!-- 
+Where's the Paper Towels?: A Shopping List App
+By Chris Slaight, 2015
+-index.html main HTML file for application
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,23 +13,24 @@
 	<link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/app.js"></script>
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
 	<div class="main-display">
-		<p class="paper-towels">
-		Where's <br>the <br>paper <br>towels?</p>
+		<p class="paper-towels">Where's <br>the <br>paper <br>towels?</p>
 	</div>
 	<div class="add-items">
-	<form id="add-item" required>
+		<form id="add-item" required>
 			<input type="text" id="list-value" placeholder="Enter a new item here...">
 			<input type="submit" id="button" value="Add Item">
 		</form>
 	</div>
-	<div class="list-items">
-		<p class="your-list">Where's the Paper Towels? • A Simple Shopping List<br>Click an item to mark as <span class="green-text">checked</span> or <span class="red-text">unchecked</span>, click 'Remove Item' to remove.</p>
+		<div class="list-items">
+			<p class="your-list">Where's the Paper Towels? • A Simple Shopping List<br>Click an item to mark as <span class="green-text">checked</span> or <span class="red-text">unchecked</span>, click 'Remove Item' to remove.</p>
 			<ul class="shopping-list">
 				<p class="no-items">No items to show, add something!</p>
-				<!-- <li class="red-item">Red Item<br><a class="remove-item-link">X</a></li>
+				<!-- *Remove this text and comments surrounding the below elements for static sample items*
+				<li class="red-item">Red Item<br><a class="remove-item-link">X</a></li>
 				<li class="green-item">Green Item<br><a class="remove-item-link">X</a></li> -->
 			</ul>
 			<a class="remove-all-link">Remove All Items</a>

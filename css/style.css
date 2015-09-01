@@ -1,9 +1,17 @@
+/*
+Where's the Paper Towels?: A Shopping List App
+By Chris Slaight, 2015
+-style.css master style sheet for all elements
+*/
 
+
+/* Body declaration to remove default margins and set background color */
 body {
 	margin: 0 0 0 0;
 	background-color: #F8F8F8;
 }
 
+/* Main display with background image */
 .main-display {
 	background-image: url('../images/cart.jpg');
 	background-size: cover;
@@ -14,6 +22,7 @@ body {
 	border-bottom: 0px;
 }
 
+/* Large header text on top */
 .main-display .paper-towels {
 	margin-top: 0;
 	text-align: right;
@@ -23,15 +32,13 @@ body {
 	letter-spacing: 6px;
 }
 
-form {
-	/*display: inline;*/
-}
-
+/* Instruction text */
 .your-list {
 	color: #303030;
 	line-height: 1.5;
 }
 
+/* Text span for green item example in instruction text */
 .green-text {
 	font-weight: bold;
 	border: 1px solid #33CC66;
@@ -40,6 +47,7 @@ form {
 	color: black;
 }
 
+/* Text span for red item example in instruction text */
 .red-text {
 	font-weight: bold;
 	border: 1px solid #700000;
@@ -48,12 +56,14 @@ form {
 	color: white;
 }
 
+/* Message which displays when no items are added */
 .no-items {
-	color:  red;
+	color:  #700000;
 	font-weight: bold;
 	font-style: italic;
 }
 
+/* Section that contains entry form */
 .add-items {
 	margin: 0 auto;
 	width: 100;
@@ -62,6 +72,7 @@ form {
 	text-align: center;
 }
 
+/* Entry form text input */
 .add-items #list-value {
 	border: 0px solid #303030;
 	padding-left: 10px;
@@ -75,6 +86,7 @@ form {
 	margin-top: 8px;
 }
 
+/* Entry form button */
 .add-items #button {
 	border: 0px solid #303030;
 	border-radius: 3px;
@@ -87,15 +99,18 @@ form {
     padding-bottom: 0;
 }
 
+/* Hover property for button */
 .add-items #button:hover {
 	font-weight: bold;
 }
 
+/* Section containing the list */
 .list-items {
 	text-align: center;
 	font-family: 'PT Serif', serif;
 }
 
+/* List unordered list parent element styling */
 .list-items ul {
 	list-style-type: none;
 	margin-left: 30%;
@@ -106,6 +121,7 @@ form {
 	border-radius: 3px;
 }
 
+/* Styling for individual list items */
 .list-items li {
 	padding: 10px 6px 10px 6px; 
 	margin: 10px 10px 10px 10px;
@@ -113,6 +129,7 @@ form {
 	line-height: 1.5;
 }
 
+/* Red item styling for unchecked items (default) */
 .red-item {
 	border: 3px solid #700000;
 	border-radius: 3px;
@@ -120,6 +137,7 @@ form {
 	color: white;
 }
 
+/* Red item hover property */
 .red-item:hover {
 	border: 3px solid #33CC66;
 	border-radius: 3px;
@@ -127,6 +145,7 @@ form {
 	color: white;
 }
 
+/* Green item styling for checked items */
 .green-item {
 	border: 3px solid #33CC66;
 	border-radius: 3px;
@@ -134,6 +153,7 @@ form {
 	color: black;
 }
 
+/* Green item hover property */
 .green-item:hover {
 	border: 3px solid #700000;
 	border-radius: 3px;
@@ -141,12 +161,14 @@ form {
 	color: black;
 }
 
+/* About text and link at footer of page */
 .list-items .about a{
 	text-transform: none;
 	font-style: italic;
 	color: #303030;
 }
 
+/* Link element on individual items to delete */
 .remove-item-link {
 	text-transform: uppercase;
 	border: 2px solid red;
@@ -161,6 +183,7 @@ form {
 	font-weight: bold;
 }
 
+/* Link at footer to remove all elements */
 .remove-all-link {
 	text-transform: uppercase;
 	border: 2px solid red;
@@ -181,80 +204,87 @@ form {
 and (max-device-width : 375px) 
 and (orientation : portrait) {
 
-.main-display {
-	background-image: url('../images/cart.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-	height: 10rem;
-	border: 2px solid #303030;
-	border-bottom: 0px;
-}
+	/* Resize main display text and height */
+	.main-display {
+		background-image: url('../images/cart.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 10rem;
+		border: 2px solid #303030;
+		border-bottom: 0px;
+	}
 
-.main-display .paper-towels {
-	margin-top: 0;
-	text-align: right;
-	font-family: "Nobile", "Arial", cursive;
-	font-size: 2em;
-	font-weight: bold;
-	letter-spacing: 6px;
-}
+	/* Lower font size */
+	.main-display .paper-towels {
+		margin-top: 0;
+		text-align: right;
+		font-family: "Nobile", "Arial", cursive;
+		font-size: 2em;
+		font-weight: bold;
+		letter-spacing: 6px;
+	}
 
-.add-items #list-value {
-	border: 0px solid #303030;
-	padding-left: 10px;
-	width: 50%;
-	height: 30px;
-	font-size: 1em;
-	font-family: 'PT Serif', serif;
-	border-top: 1px solid #303030;
-	border-bottom: 1px solid #303030;
-	border-radius: 3px;
-	margin-top: 8px;
-}
+	/* Reduce font size and increase width */
+	.add-items #list-value {
+		border: 0px solid #303030;
+		padding-left: 10px;
+		width: 50%;
+		height: 30px;
+		font-size: 1em;
+		font-family: 'PT Serif', serif;
+		border-top: 1px solid #303030;
+		border-bottom: 1px solid #303030;
+		border-radius: 3px;
+		margin-top: 8px;
+	}
 
-.add-items #button {
-	border: 0px solid #303030;
-	border-radius: 3px;
-    background-color: white;
-    color: #303030;
-    height: 28px;
-    width: 6em;
-    font-size: 14px;
-    font-family: 'PT Serif', serif;
-    padding-bottom: 0;
-}
+	/* Decrease size and font size */
+	.add-items #button {
+		border: 0px solid #303030;
+		border-radius: 3px;
+	    background-color: white;
+	    color: #303030;
+	    height: 28px;
+	    width: 6em;
+	    font-size: 14px;
+	    font-family: 'PT Serif', serif;
+	    padding-bottom: 0;
+	}
 
-.your-list {
-	color: #303030;
-	line-height: 1.5;
-	font-size: 12px;
-}
+	/* Decrease font size */
+	.your-list {
+		color: #303030;
+		line-height: 1.5;
+		font-size: 12px;
+	}
 
+	/* Reduce left & right margins for better fit */
+	.list-items ul {
+		list-style-type: none;
+		margin-left: 5%;
+		margin-right: 5%;
+		padding-left: 0;
+		padding-right: 0;
+		border: 4px solid #303030;
+		border-radius: 3px;
+	}
 
-.list-items ul {
-	list-style-type: none;
-	margin-left: 5%;
-	margin-right: 5%;
-	padding-left: 0;
-	padding-right: 0;
-	border: 4px solid #303030;
-	border-radius: 3px;
-}
+	/* Override hover with same style as default */
+	.red-item:hover {
+		border: 3px solid #700000;
+		border-radius: 3px;
+		background-color: #700000;
+		color: white;
+	}
 
-.red-item:hover {
-	border: 3px solid #700000;
-	border-radius: 3px;
-	background-color: #700000;
-	color: white;
-}
-
-.green-item:hover {
-	border: 3px solid #33CC66;
-	border-radius: 3px;
-	background-color: #33CC66;
-	color: black;
-}
+	/* Override hover with same style as default */
+	.green-item:hover {
+		border: 3px solid #33CC66;
+		border-radius: 3px;
+		background-color: #33CC66;
+		color: black;
+	}
 
 }
 
