@@ -92,6 +92,11 @@ $(document).ready(function(){
  	}
 });
 
+$(function() {
+    $( ".shopping-list" ).sortable();
+    $( ".shopping-list" ).disableSelection();
+  });
+
 
 
 

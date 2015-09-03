@@ -262,13 +262,23 @@ and (orientation : portrait) {
 	/* Reduce left & right margins for better fit */
 	.list-items ul {
 		list-style-type: none;
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-left: 0%;
+		margin-right: 0%;
 		padding-left: 0;
 		padding-right: 0;
-		border: 4px solid #303030;
+		border: none;
 		border-radius: 3px;
 	}
+
+	/* Styling for individual list items */
+	.list-items li {
+	padding: 10px 6px 10px 6px; 
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	word-wrap: break-word;
+	line-height: 1.5;
+}
 
 	/* Override hover with same style as default */
 	.red-item:hover {
